@@ -12,7 +12,6 @@ export class TrendingNewsService {
 
   newsListIds: number[] = []
   newsList$ = new BehaviorSubject<TrendingNewsInterface[]>([])
-  newsListItem$ = new Subject<TrendingNewsInterface>()
 
   newsPerPage: number = 10
 
@@ -35,7 +34,6 @@ export class TrendingNewsService {
           ...this.newsList$.getValue(),
           res
         ])
-        this.newsListItem$.next(res)
       })
     }
   }
