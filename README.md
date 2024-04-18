@@ -12,6 +12,8 @@ ng build
 
 node dist/azinec-task/server/server.mjs
 
+Navigate to http://localhost:4000/
+
 
 # AzinecTask
 
