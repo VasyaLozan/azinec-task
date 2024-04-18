@@ -1,3 +1,18 @@
+# Node Version
+
+v20.11.1
+
+# Angular Version
+
+V17
+
+# start hosting with SSR
+
+ng build
+
+node dist/azinec-task/server/server.mjs
+
+
 # AzinecTask
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.

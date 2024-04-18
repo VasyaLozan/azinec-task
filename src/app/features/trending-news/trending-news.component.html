@@ -1,0 +1,14 @@
+<ng-container>
+  <h2>Trending News</h2>
+  @for (news of trendingNews | async; track news.id; let last = $last) {
+    @if (last) {
+      <article (appIntersectionListener)="loadMoreNews()">
+        <a [href]="news?.url" target="_blank">{{news?.title}}</a>
+      </article>
+    } @else {
+      <article>
+        <a [href]="news?.url" target="_blank">{{news?.title}}</a>
+      </article>
+    }
+  }
+</ng-container>
